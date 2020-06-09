@@ -1,0 +1,10 @@
+1. Cretae a folder and copy the files into that folder
+2. Modify provider.tf file
+3. run the following commands:
+
+   terraform init
+   terraform apply --auto-approve
+
+4. By the end of work:
+   
+   terraform destroy --auto-approve
