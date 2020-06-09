@@ -1,5 +1,11 @@
+#######################################################################
+
+#  Instances in ca-central-1
+
+#######################################################################
+
 resource "aws_instance" "W_2008" {
-  ami                    = "ami-39ec9959"
+  ami                    = "ami-e8bb078c"
   instance_type          = "t2.medium"
   subnet_id              = "${aws_subnet.GOV-public-subnet.id}"
   vpc_security_group_ids = ["${aws_security_group.GOV-general-SG.id}"]
@@ -13,7 +19,7 @@ resource "aws_instance" "W_2008" {
 }
 
 resource "aws_instance" "W_2008_NoRole" {
-  ami                    = "ami-39ec9959"
+  ami                    = "ami-e8bb078c"
   instance_type          = "t2.medium"
   subnet_id              = "${aws_subnet.GOV-public-subnet.id}"
   vpc_security_group_ids = ["${aws_security_group.GOV-general-SG.id}"]
@@ -28,7 +34,7 @@ resource "aws_instance" "W_2008_NoRole" {
 
 
 resource "aws_instance" "AMZN2_NoRole" {
-  ami                    = "ami-06fcc1f0bc2c8943f"
+  ami                    = "ami-0f75c2980c6a5851d"
   instance_type          = "t2.micro"
   subnet_id              = "${aws_subnet.GOV-public-subnet.id}"
   vpc_security_group_ids = ["${aws_security_group.GOV-general-SG.id}"]
@@ -43,7 +49,7 @@ resource "aws_instance" "AMZN2_NoRole" {
 
 
 resource "aws_instance" "Amazon-linux2" {
-  ami                    = "ami-06fcc1f0bc2c8943f"
+  ami                    = "ami-0f75c2980c6a5851d"
   instance_type          = "t2.micro"
   subnet_id              = "${aws_subnet.GOV-public-subnet.id}"
   vpc_security_group_ids = ["${aws_security_group.GOV-general-SG.id}"]
@@ -57,7 +63,7 @@ resource "aws_instance" "Amazon-linux2" {
 }
 
 resource "aws_instance" "ubuntu" {
-  ami                    = "ami-0f56279347d2fa43e"
+  ami                    = "ami-09ca8bd0cc0115bed"
   instance_type          = "t2.micro"
   subnet_id              = "${aws_subnet.GOV-public-subnet.id}"
   vpc_security_group_ids = ["${aws_security_group.GOV-general-SG.id}"]
@@ -72,7 +78,7 @@ resource "aws_instance" "ubuntu" {
 }
 
 resource "aws_instance" "W_2016" {
-  ami                    = "ami-06894046d41571622"
+  ami                    = "ami-083db6415ff4ab7b1"
   instance_type          = "t2.large"
   subnet_id              = "${aws_subnet.GOV-public-subnet.id}"
   vpc_security_group_ids = ["${aws_security_group.GOV-general-SG.id}"]
